@@ -5,8 +5,8 @@ import java.util.Set;
 
 import javax.annotation.Resource;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.github.tobato.fastdfs.conn.ConnectionManager;
@@ -43,7 +43,7 @@ public class DefaultGenerateStorageClient implements GenerateStorageClient {
     protected ConnectionManager connectionManager;
 
     /** 日志 */
-    protected static Logger LOGGER = LogManager.getLogger(DefaultGenerateStorageClient.class);
+    protected static Logger LOGGER = LoggerFactory.getLogger(DefaultGenerateStorageClient.class);
 
     /**
      * 上传不支持断点续传的文件

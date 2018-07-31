@@ -9,13 +9,13 @@ import java.nio.charset.Charset;
 import java.util.Arrays;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 
 import com.github.tobato.fastdfs.exception.FdfsConnectException;
 import com.github.tobato.fastdfs.proto.CmdConstants;
 import com.github.tobato.fastdfs.proto.OtherConstants;
 import com.github.tobato.fastdfs.proto.mapper.BytesUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 默认连接实现
@@ -32,7 +32,7 @@ public class DefaultConnection implements Connection {
     private Charset charset;
 
     /** 日志 */
-    private static final Logger LOGGER = LogManager.getLogger(DefaultConnection.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DefaultConnection.class);
 
     /**
      * 创建与服务端连接

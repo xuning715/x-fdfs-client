@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.beanutils.BeanUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * param对象与byte映射器
@@ -26,7 +26,7 @@ public class FdfsParamMapper {
     private static Map<String, ObjectMateData> mapCache = new HashMap<String, ObjectMateData>();
 
     /** 日志 */
-    private static Logger LOGGER = LogManager.getLogger(FdfsParamMapper.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(FdfsParamMapper.class);
 
     /**
      * 将byte解码为对象

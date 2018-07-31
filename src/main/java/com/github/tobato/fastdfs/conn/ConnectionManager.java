@@ -2,8 +2,8 @@ package com.github.tobato.fastdfs.conn;
 
 import java.net.InetSocketAddress;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,7 +27,7 @@ public class ConnectionManager {
     @Autowired
     private FdfsConnectionPool pool;
     /** 日志 */
-    protected static final Logger LOGGER = LogManager.getLogger(ConnectionManager.class);
+    protected static final Logger LOGGER = LoggerFactory.getLogger(ConnectionManager.class);
 
     /**
      * 构造函数

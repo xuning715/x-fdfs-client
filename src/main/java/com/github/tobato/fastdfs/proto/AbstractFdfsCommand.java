@@ -5,11 +5,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
-
 import com.github.tobato.fastdfs.conn.Connection;
 import com.github.tobato.fastdfs.exception.FdfsIOException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 交易命令抽象类
@@ -21,7 +20,7 @@ import com.github.tobato.fastdfs.exception.FdfsIOException;
 public abstract class AbstractFdfsCommand<T> implements FdfsCommand<T> {
 
     /** 日志 */
-    private static final Logger LOGGER = LogManager.getLogger(AbstractFdfsCommand.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AbstractFdfsCommand.class);
 
     /** 表示请求消息 */
     protected FdfsRequest request;

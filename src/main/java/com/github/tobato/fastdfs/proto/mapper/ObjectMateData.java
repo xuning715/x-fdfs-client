@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 映射对象元数据
@@ -23,7 +23,7 @@ import org.apache.log4j.LogManager;
 public class ObjectMateData {
 
     /** 日志 */
-    private static Logger LOGGER = LogManager.getLogger(ObjectMateData.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(ObjectMateData.class);
 
     /** 映射对象类名 */
     private String className;
