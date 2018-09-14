@@ -287,25 +287,4 @@
         <!--</dependency>-->
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>release</id>
-            <name>Internal Releases</name>
-            <url>http://47.93.47.14:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>Snapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://47.93.47.14:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>nuxes-snapshots</id>
-            <url>http://47.93.47.14:8081/nexus/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 </project>
