@@ -291,18 +291,18 @@
         <repository>
             <id>release</id>
             <name>Internal Releases</name>
-            <url>http://nexus.ezaisheng.com/repository/maven-releases/</url>
+            <url>http://123.56.188.213:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>Snapshots</id>
             <name>Internal Snapshots</name>
-            <url>http://nexus.ezaisheng.com/repository/maven-snapshots/</url>
+            <url>http://123.56.188.213:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <repositories>
         <repository>
             <id>nuxes-snapshots</id>
-            <url>http://nexus.ezaisheng.com/repository/maven-snapshots/</url>
+            <url>http://123.56.188.213:8081/repository/maven-snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
